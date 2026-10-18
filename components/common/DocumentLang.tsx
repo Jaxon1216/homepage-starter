@@ -12,11 +12,5 @@ export function DocumentLang({ lang }: { lang: string }) {
     };
   }, [lang]);
 
-  return (
-    <script
-      dangerouslySetInnerHTML={{
-        __html: `document.documentElement.lang=${JSON.stringify(lang)}`,
-      }}
-    />
-  );
+  return null;
 }
